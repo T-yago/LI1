@@ -1,28 +1,28 @@
-# Laboratórios de Informática I
+# Block Dude
 
-## Repositório
+This project consists of a "Block Dude" game using Haskell and was the first project i made at Universidade do Minho. The game involves moving blocks and climbing to reach higher places, and required problem-solving skills and knowledge of functional programming.
 
-O sistema de controlo de versões utilizado é o git. O repositório encontra-se disponível [nesta organização](https://gitlab.com/uminho-di/li1/2122). Para obter o repositório na sua máquina, garanta que tem a chave pública SSH adicionada na sua conta do GitLab com o email instituicional ([User Settings/SSH Keys](https://gitlab.com/-/profile/keys)), depois basta efetuar clone ao repositório.
+The program allows for creation of maps based of user input, as well as random map creation. Additionaly, the program features a "bot" that solves any given map.
 
-```bash
-$ git clone git@gitlab.com:uminho-di/li1/2122/2021li1g046.git
-$ cd 2021li1g046 
-```
 
-## Testes
-
-O projecto contém testes unitários escritos usando a biblioteca [HUnit](https://hackage.haskell.org/package/HUnit). Os testes podem ser executados da seguinte forma.
+# Example of graphical representation: 
 
 ```bash
-$ ghci -i="src" -i="tests" tests/Tests.hs
->>> runTestsT1 -- Correr os testes tarefa 1
->>> runTestsT2 -- Correr os testes tarefa 2
->>> runTestsT3 -- Correr os testes tarefa 3
->>> runTestsT4 -- Correr os testes tarefa 4
->>> runAllTests -- Correr todos os testes
+>>> Jogo [[Vazio,Vazio,Vazio,Bloco],[Vazio,Vazio,Vazio,Bloco],[Porta,Vazio,Caixa,Bloco],[Bloco,Bloco,Bloco,Bloco]] (Jogador (2,1) Oeste False)
+    X
+   <X
+ P CX
+ XXXX
 ```
 
-## Grupo 46
+```bash
+>>> Jogo [[Bloco,Vazio,Vazio,Vazio],[Bloco,Vazio,Vazio,Vazio],[Bloco,Vazio,Vazio,Porta],[Bloco,Bloco,Bloco,Bloco]] (Jogador (1,2) Este True)
+
+ X
+ XC
+ X> P
+ XXXX
+```
 
 - **A100748** Diogo Guimarães Pereira;
 - **A100665** Tiago Nuno Magalhães Teixeira ;
