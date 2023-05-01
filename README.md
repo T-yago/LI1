@@ -24,5 +24,3 @@ The program allows for creation of maps based of user input, as well as random m
  XXXX
 ```
 
-- **A100748** Diogo Guimarães Pereira;
-- **A100665** Tiago Nuno Magalhães Teixeira ;
